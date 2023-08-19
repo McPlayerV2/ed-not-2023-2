@@ -51,3 +51,73 @@ print("Elemto na QUARTA posição:", valores[3])
 print("Elemento na Primeira posição:", valores[0])
 print("Elemto na ULTIMA posição:", valores[-1])
 print("Elemento na PENULTIM posição:", valores[-2])
+
+print("-" * 40)
+
+#5)SUBSTITUINDO VALORES EXISTENTES
+print("Antes", legumes)
+legumes[3] = "vagem"
+
+legumes[0] = "mandica"
+
+legumes[-1] = "milho"
+
+print("Depois ", legumes)
+
+print("-" * 40)
+
+#6)
+print("Numero de eementos na lista de valores: ", len(valores))
+print("Numeros de elementos na lista de legumes: ", len(legumes))
+
+print("-" * 40)
+
+#7)
+print("Antes: ", valores)
+removido = valores.pop()
+print("Valor removido: ", removido)
+print("Depois: ", valores)
+
+print("-" * 40)
+
+#8)
+removido = valores.pop(3)
+print("Valor removido da posição 3: ", removido)
+print(valores)
+removido = valores.pop(0)
+print("Valore removido da primeira posição: ", removido)
+print(valores)
+
+print("-" * 40)
+
+#9)
+print("Antes: ", legumes)
+legumes.remove("abobrinha")
+print("Apos remoção de abobrinha: ",legumes)
+
+print("-" * 40)
+
+#Arecentando algun legumes para aumentar a lista
+
+legumes.append("beterraba")
+legumes.append("abobrinha")
+legumes.append("batata doce")
+legumes.append("mandioquinha")
+legumes.append("cará")
+legumes.append("nabo")
+
+#10)
+#Falin significa copiar uma parte da lista (uma sublista)
+
+print(legumes)
+
+#Cria uma sublista qu contenha os elementos da posição 2 e posição 7
+
+sublista2_7 = legumes[2:8]
+print("Sublista de 2 a 7: ", sublista2_7)
+
+sublista0_5 = legumes[:6]
+print("Sublista de 0 a 5: ", sublista0_5)
+
+sublista8_fim = legumes[8:]
+print("Sublista do 8 ao fim: ", sublista8_fim)
